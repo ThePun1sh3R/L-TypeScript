@@ -7,7 +7,6 @@ interface Todo {
 }
 axios.get(url).then(response => {
     const todo = response.data as Todo;
-
     const id = todo.id;
     const title = todo.title;
     const completed = todo.completed;
